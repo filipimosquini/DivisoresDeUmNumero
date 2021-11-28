@@ -4,4 +4,9 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\FindNumbersDivider.CrossCutting\FindNumbersDivider.CrossCutting.csproj" />
+    <ProjectReference Include="..\FindNumbersDivider.Domain\FindNumbersDivider.Domain.csproj" />
+  </ItemGroup>
+
 </Project>

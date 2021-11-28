@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindNumbersDivider.Ioc", "F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindNumbersDivider.Tests", "FindNumbersDivider.Tests\FindNumbersDivider.Tests.csproj", "{033FBF3F-85AB-48AF-82A8-6925F841E323}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindNumbersDivider.CrossCutting", "FindNumbersDivider.CrossCutting\FindNumbersDivider.CrossCutting.csproj", "{8AFA8D06-64F1-48DA-B2FA-C38325ED0015}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{033FBF3F-85AB-48AF-82A8-6925F841E323}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{033FBF3F-85AB-48AF-82A8-6925F841E323}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{033FBF3F-85AB-48AF-82A8-6925F841E323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFA8D06-64F1-48DA-B2FA-C38325ED0015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFA8D06-64F1-48DA-B2FA-C38325ED0015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFA8D06-64F1-48DA-B2FA-C38325ED0015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFA8D06-64F1-48DA-B2FA-C38325ED0015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
