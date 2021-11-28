@@ -25,7 +25,7 @@ namespace FindNumbersDivider.Application
                 return new GenericResponse
                 {
                     Success = false,
-                    Message = "Error to calculate dividers",
+                    Message = "Erro ao calcular os divisores",
                     Data = algarism.Notifications
                 };
             }
@@ -37,7 +37,7 @@ namespace FindNumbersDivider.Application
             return new GenericResponse
             {
                 Success = true,
-                Message = "Dividers calculated with success",
+                Message = "Divisores calculados com sucesso",
                 Data = new NumberResponse
                 {
                     Number = number,
