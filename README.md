@@ -1,2 +1,2 @@
-# DivisoresDeUmNumero
-Calcula os divisores possíveis para um número inteiro positivo
+# Find Numbers Divider
+calculate possible dividers of a positive integer number
