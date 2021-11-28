@@ -16,7 +16,7 @@ namespace FindNumbersDivider.Domain.Entities
         {
             AddNotifications(new Contract<Number>()
                 .Requires()
-                .IsGreaterThan(algarism, 0, "O número informado deve ser maior que zero"));
+                .IsGreaterThan(algarism, 0, "Number", "O número informado deve ser maior que zero"));
 
             Algarism = algarism;
         }
