@@ -7,12 +7,12 @@ namespace FindNumbersDivider.Domain.Entities
     {
         public Number(int algarism)
         {
-            Algarism = algarism;
+            SetAlgarism(algarism);
         }
 
         public int Algarism { get; private set; }
 
-        public void SetNumber(int algarism)
+        public void SetAlgarism(int algarism)
         {
             AddNotifications(new Contract<Number>()
                 .Requires()
