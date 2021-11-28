@@ -4,4 +4,13 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FindNumbersDivider.Application\FindNumbersDivider.Application.csproj" />
+    <ProjectReference Include="..\FindNumbersDivider.Domain\FindNumbersDivider.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
