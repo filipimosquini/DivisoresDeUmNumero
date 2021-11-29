@@ -2,9 +2,9 @@
 using FluentAssertions;
 using Xunit;
 
-namespace FindNumbersDivider.Tests.Domain
+namespace FindNumbersDivider.Tests.Entities
 {
-    [Trait("App Service Tests", "Number")]
+    [Trait("Entity Tests", "Number")]
     public class NumberTest
     {
         [Fact(DisplayName = "On_Create_ShouldCreateWithoutErrors")]
