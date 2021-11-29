@@ -4,6 +4,7 @@ using FindNumbersDivider.Ioc;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace DivisoresDeUmNumero
@@ -46,9 +47,20 @@ Pressione * 1 * para calcular os divisores de um número!
 
                     Console.WriteLine("Informe um número para obter seus divisores: ");
 
-                    int number = Convert.ToInt32(Console.ReadLine());
+                    var evaluateData = new Regex(@"^\d+$").Match(Console.ReadLine());
 
-                    await CalculateNumberDividers(number);
+                    if (evaluateData.Success)
+                    {
+                        int number = Convert.ToInt32(Console.ReadLine());
+
+                        await CalculateNumberDividers(number);
+                    }
+                    else
+                    {
+                        Console.WriteLine(@"
+    Número inválido!
+                                         ");
+                    }
 
                     return true;
 
