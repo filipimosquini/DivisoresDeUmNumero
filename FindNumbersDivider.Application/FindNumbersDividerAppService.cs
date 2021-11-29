@@ -3,6 +3,7 @@ using FindNumbersDivider.CrossCutting.Application;
 using FindNumbersDivider.Domain.Entities;
 using FindNumbersDivider.Domain.Responses;
 using FindNumbersDivider.Domain.Services.Interface;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace FindNumbersDivider.Application
@@ -26,7 +27,10 @@ namespace FindNumbersDivider.Application
                 {
                     Success = false,
                     Message = "Erro ao calcular os divisores",
-                    Data = algarism.Notifications
+                    Data = new ErrorResponse
+                    {
+                        Errors = algarism.Notifications.Select(s => s.Message)
+                    }
                 };
             }
 
