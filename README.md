@@ -20,3 +20,5 @@ O projeto e estruturado com as seguintes camadas
 # Observaçoes
 
 O projeto foi desenvolvido de forma opcional em inglês. Somente está em português as mensagens de retorno e interação com o usuário.
+
+Neste projeto, utilizei o conceito de design por contratos (Desing By Contracts), e para isso, foi usada a biblioteca Flunt.
