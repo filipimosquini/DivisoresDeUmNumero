@@ -47,6 +47,12 @@ namespace FindNumbersDivider.Domain.Services
         public Task<List<int>> DecomposesNumberIntoPrimeFactors(int number)
         {
             var primeFactors = new List<int>() { 1 };
+
+            if (number == 1)
+            {
+                return Task.FromResult(primeFactors);
+            }
+
             var primeNumbers = CalculatePrimeNumbers(number).ToArray();
 
             var index = 0; var result = number;
