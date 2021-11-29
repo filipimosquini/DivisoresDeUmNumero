@@ -9,7 +9,8 @@ O projeto e estruturado com as seguintes camadas
 1. Entrypoint: É o ponto de entrada do sistema, deve ser o projeto a ser executado para que a aplicação seja executada.
 2. Application: Corresponde a camada aonde ocorre a orquestração dos fluxos das funcionalidades do sistema.
 3. Domain: Contém o core da aplicação, nela as regras de negócios são definidas.
-4. CrossCutting: É uma camada que conté códigos que podem ser utilizados por todas as outras camadas do projeto.
+4. CrossCutting: É a camada que conté códigos que podem ser utilizados por todas as outras camadas do projeto.
+5. Ioc: É a camada que resolve as dependências necessárias para que seja possível usar as injeçoes de dependências.
 
 # Consideraçoes
 
