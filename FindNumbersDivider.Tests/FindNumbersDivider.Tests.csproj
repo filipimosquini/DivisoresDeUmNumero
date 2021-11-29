@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FindNumbersDivider.Application\FindNumbersDivider.Application.csproj" />
     <ProjectReference Include="..\FindNumbersDivider.Domain\FindNumbersDivider.Domain.csproj" />
   </ItemGroup>
 

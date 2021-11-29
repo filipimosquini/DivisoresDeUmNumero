@@ -18,12 +18,12 @@ namespace FindNumbersDivider.Tests.Services
         {
             // Arrange
             var mocker = new AutoMocker();
-            var appService = mocker.CreateInstance<NumberService>();
+            var service = mocker.CreateInstance<NumberService>();
 
             var expectedResult = new List<int>() { 2, 3, 5, 7 };
 
             // Act
-            var result = appService.CalculatePrimeNumbers(10);
+            var result = service.CalculatePrimeNumbers(10);
 
             // Assert
             _comparator.Compare(expectedResult, result).AreEqual.Should().BeTrue();
@@ -35,12 +35,12 @@ namespace FindNumbersDivider.Tests.Services
         {
             // Arrange
             var mocker = new AutoMocker();
-            var appService = mocker.CreateInstance<NumberService>();
+            var service = mocker.CreateInstance<NumberService>();
 
             var expectedResult = new List<int>() { 1, 2, 5 };
 
             // Act
-            var result = await appService.DecomposesNumberIntoPrimeFactors(10);
+            var result = await service.DecomposesNumberIntoPrimeFactors(10);
 
             // Assert
             _comparator.Compare(expectedResult, result).AreEqual.Should().BeTrue();
@@ -52,12 +52,12 @@ namespace FindNumbersDivider.Tests.Services
         {
             // Arrange
             var mocker = new AutoMocker();
-            var appService = mocker.CreateInstance<NumberService>();
+            var service = mocker.CreateInstance<NumberService>();
 
             var expectedResult = new List<int>() { 1 };
 
             // Act
-            var result = await appService.DecomposesNumberIntoPrimeFactors(1);
+            var result = await service.DecomposesNumberIntoPrimeFactors(1);
 
             // Assert
             _comparator.Compare(expectedResult, result).AreEqual.Should().BeTrue();
@@ -69,14 +69,14 @@ namespace FindNumbersDivider.Tests.Services
         {
             // Arrange
             var mocker = new AutoMocker();
-            var appService = mocker.CreateInstance<NumberService>();
+            var service = mocker.CreateInstance<NumberService>();
 
             var primeFactors = new List<int>() { 1, 2, 5 };
 
             var expectedResult = new List<int>() { 1, 2, 5, 10 };
 
             // Act
-            var result = await appService.FindDividers(primeFactors);
+            var result = await service.FindDividers(primeFactors);
 
             // Assert
             _comparator.Compare(expectedResult, result).AreEqual.Should().BeTrue();
@@ -88,14 +88,14 @@ namespace FindNumbersDivider.Tests.Services
         {
             // Arrange
             var mocker = new AutoMocker();
-            var appService = mocker.CreateInstance<NumberService>();
+            var service = mocker.CreateInstance<NumberService>();
 
             var dividers = new List<int>() { 1, 2, 5, 10 };
 
             var expectedResult = new List<int>() { 1, 2, 5 };
 
             // Act
-            var result = await appService.ExtractPrimeNumbersOfDividersList(dividers);
+            var result = await service.ExtractPrimeNumbersOfDividersList(dividers);
 
             // Assert
             _comparator.Compare(expectedResult, result).AreEqual.Should().BeTrue();
