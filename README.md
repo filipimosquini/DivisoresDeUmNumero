@@ -11,6 +11,7 @@ O projeto e estruturado com as seguintes camadas
 3. Domain: Contém o core da aplicação, nela as regras de negócios são definidas.
 4. CrossCutting: É a camada que conté códigos que podem ser utilizados por todas as outras camadas do projeto.
 5. Ioc: É a camada que resolve as dependências necessárias para que seja possível usar as injeçoes de dependências.
+6. Tests: Contém os testes de unidade.
 
 # Consideraçoes
 
@@ -19,6 +20,6 @@ O projeto e estruturado com as seguintes camadas
 
 # Observaçoes
 
-O projeto foi desenvolvido de forma opcional em inglês. Somente está em português as mensagens de retorno e interação com o usuário.
+O projeto foi desenvolvido de forma opcional em inglês. Somente estão em português as mensagens de retorno e interação com o usuário.
 
 Neste projeto, utilizei o conceito de design por contratos (Desing By Contracts), e para isso, foi usada a biblioteca Flunt.
